@@ -14,9 +14,9 @@ import com.squareup.picasso.Picasso;
 public class User extends BaseObservable {
     private String name;
     private String password;
-    private ImageView header;
+    private String header;
 
-    public User(String name, String password, ImageView header) {
+    public User(String name, String password, String header) {
         this.name = name;
         this.password = password;
         this.header = header;
@@ -42,11 +42,11 @@ public class User extends BaseObservable {
         notifyPropertyChanged(com.codeteenager.mvvmdemo.BR.password);
     }
 
-    public ImageView getHeader() {
+    public String getHeader() {
         return header;
     }
 
-    public void setHeader(ImageView header) {
+    public void setHeader(String header) {
         this.header = header;
     }
 
